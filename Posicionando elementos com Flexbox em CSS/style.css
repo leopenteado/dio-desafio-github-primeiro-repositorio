@@ -169,6 +169,7 @@ header{
     border: 5px solid #122A57;
     padding: 20px;
     text-align: center;
+    width: 30%;
 }
 
 .item-plano h3{
@@ -214,4 +215,75 @@ footer{
     align-items: flex-end;
     justify-content: space-between;
     height: 80%;
+}
+
+@media only screen and (max-width: 994px){
+    .flex-container{
+        padding: 0 20px;
+    }
+
+    .container-externo{
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 679px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu{
+        gap: 40px;
+    }
+    
+    .apresentacao{
+        justify-content: center;
+    }
+
+    .apresentacao img,.quem-somos img{
+        display: none;
+    }
+
+    .quem-somos{
+        margin-bottom: 30px;
+    }
+
+    .servicos, .planos{
+        text-align: center;
+    }
+
+    .galeria-servicos, .galeria-planos{
+        display: block;
+    }
+
+    .item-servico{
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .item-servico img{
+        width: 200px;
+        margin: auto;
+    }
+
+    .item-plano{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
+
+    .rodape{
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
 }
